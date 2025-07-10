@@ -1,0 +1,24 @@
+:root{
+    --navy-blue: #1a1f71; /* use like this in code ... attribute: var(--navy-blue);*/
+    --bright-red: #e10600;
+    --white: #ffffff;
+    --steel-gray: #555d66;
+    --warning-yellow: #ffc107;
+}
+
+.navbar{
+  background-color: var(--navy-blue) !important;
+}
+.navbar-toggler{
+  background-color: var(--white) !important;
+  border: solid var(--warning-yellow) 3px !important;
+}
+.nav-link{
+  color: var(--white) !important;
+}
+.nav-link:hover{
+  color: var(--warning-yellow) !important;
+}
+#link-home{
+  color: var(--warning-yellow) !important;
+}
