@@ -14,13 +14,13 @@
         <nav class="navbar navbar-expand-lg fixed-top">
 
             <div class="container-fluid">                                                           <!--container-fluid is a bootstrap class that stretches the container end-to-end on any screen size-->
-                <a class="navbar-brand" href="#">E.T.C</a>                                          <!--using container - which is also a bootstrap class - would be good for a fixed-width based on screen size, centered. it'd be good for a hero section since you can control the readability and orderlyness of the content within the hero-->
+                <a class="navbar-brand" href="#">L.E.T.S</a>                                      <!--using container - which is also a bootstrap class - would be good for a fixed-width based on screen size, centered. it'd be good for a hero section since you can control the readability and orderlyness of the content within the hero-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>                                                                                    <!--the button and span are the 'hamburger' you see when screen shrinks-->
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">   <!--the id being here and matching the data-bs-target and aria-controls is crucial to being able to toggle the hamburger and it actually showing the list, remove the id and see what happens when you toggle the hamburger-->
-                    <ul class="navbar-nav nav-pill">                                                                 <!--navbar-nav puts the nav-items in horizontal formation and removes any list decorations like bullet points-->
+                    <ul class="navbar-nav">                                                                 <!--navbar-nav puts the nav-items in horizontal formation and removes any list decorations like bullet points-->
                         <li class="nav-item me-5">                                                     <!--ms-3 and me-3 each mean margin start and margin end, values range from 1-5 -->
                             <a href="#" id="link-home" class="nav-link active" aria-current="page">Home</a> <!--nav-link keeps the links vertically aligned - remove the class to see what happens-->
                         </li>                                                                               <!--aria stands for accessible rich internet applications, use it for assitive tech like screen readers, in context the attribute and value represents the current page the user is on-->
@@ -41,16 +41,47 @@
         </nav>
     </header>
 
-    <main>
-        <div>
-            
+    <main class="css-background-image bg-section d-flex align-items-center justify-content-center" style="background-image: url('images/yellow-line-road-768x511.jpg');">
+        <div class="css-body-container container">                              <!--reference bootstrap documentation for container breakpoints-->
+            <div class="css-phone-container d-flex justify-content-center">
+                <h1>
+                    Call Us: <a href="tel:1111111111" style="color: red;">(###) ###-####</a>
+                </h1>
+            </div>
+            <div class="css-tow-image p-4 d-flex justify-content-center">
+                <img src="images/tow-pic-1.jpg" class="rounded-5" width="471px" height="auto" />
+            </div>
+            <div class="css-form-container">
+                <form class="d-flex flex-column align-items-center" method="POST" action="https://formsubmit.co/el/dutono">
+                    <h1 class="mb-3">Get a <span style="color: red;">free estimate!</span></h1>
+
+                    <label for="first-name" class="css-form-label">Name</label>
+                    <input type="text" id="first-name" name="fname" placeholder="First" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required >
+                    <input type="text" id="last-name" name="lname" placeholder="Last" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required>
+
+                    <label for="email" class="css-form-label">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email" class="mb-2 rounded-1" style="width: 400px; height: 40px;" name="_replyto" required>
+
+                    <label for="phoneNumber" class="css-form-label">Phone number</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Number" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required >
+
+                    <label for="textarea" class="css-form-label">Comment</label>
+                    <textarea placeholder="Enter message here" style="width: 400px; height: 150px;" required></textarea>
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <span class="css-submit-button-container">
+                        <input type="submit" value="Submit" class="css-submit-button mt-3 mb-3 rounded-pill p-1" required>
+                    </span>
+                    <input type="hidden" name="_autoresponse" value="Thanks for your message! I’ll get back to you soon.">
+                </form>
+            </div>
+            <footer>
+                <div>
+                    Copyright
+                </div>
+            </footer>
         </div>
-
     </main>
-
-    <footer>
-
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>

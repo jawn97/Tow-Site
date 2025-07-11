@@ -9,6 +9,9 @@
 .navbar{
   background-color: var(--navy-blue) !important;
 }
+.navbar-brand{
+  color: white !important;
+}
 .navbar-toggler{
   background-color: var(--white) !important;
   border: solid var(--warning-yellow) 3px !important;
@@ -21,4 +24,29 @@
 }
 #link-home{
   color: var(--warning-yellow) !important;
+}
+.css-background-image{
+  background-size: cover;
+  background-position: center;
+}
+.css-body-container{
+  background-color: var(--white) !important;
+  padding-top: 80px;
+}
+.css-submit-button{
+  width: 80px;
+  background-color: var(--bright-red);
+  color: var(--white);
+  border: none;
+}
+.css-submit-button-container, label{
+  display: flex;
+  justify-content: left;
+  width: 400px;
+}
+.css-form-label{
+  font-weight: bold;
+}
+input, textarea{
+  border: solid var(--steel-gray) 1px;
 }
