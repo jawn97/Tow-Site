@@ -50,3 +50,17 @@
 input, textarea{
   border: solid var(--steel-gray) 1px;
 }
+.css-flex-container-map-message{
+  display: flex;
+}
+.css-map-column{
+  border: solid black 1px;
+  box-shadow: 10px 5px 5px rgb(118, 118, 118);
+}
+.css-message-column-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid red 1px;
+  padding-left: 20px;
+}
