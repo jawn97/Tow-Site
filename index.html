@@ -14,7 +14,6 @@
         <nav class="navbar navbar-expand-lg fixed-top">
 
             <div class="container-fluid">                                                           <!--container-fluid is a bootstrap class that stretches the container end-to-end on any screen size-->
-                                                     <!--using container - which is also a bootstrap class - would be good for a fixed-width based on screen size, centered. it'd be good for a hero section since you can control the readability and orderlyness of the content within the hero-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>                                                                                    <!--the button and span are the 'hamburger' you see when screen shrinks-->
@@ -52,21 +51,18 @@
                 <img src="images/tow-pic-1.jpg" class="rounded-5" width="471px" height="auto" />
             </div>
             <div class="css-form-container">
-                <form class="d-flex flex-column align-items-center" method="POST" action="https://formsubmit.co/el/dutono">
+                <form class="d-flex flex-column align-items-center" method="POST" action="https://formsubmit.co/8f8f0085cf62b5a562c24d3c8ae62537">
                     <h1 class="mb-3">Get a <span style="color: red;">free estimate!</span></h1>
 
-                    <label for="first-name" class="css-form-label">Name</label>
-                    <input type="text" id="first-name" name="fname" placeholder="First" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required >
-                    <input type="text" id="last-name" name="lname" placeholder="Last" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required>
-
-                    <label for="email" class="css-form-label">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Email" class="mb-2 rounded-1" style="width: 400px; height: 40px;" name="_replyto" required>
+                    <label for="name" class="css-form-label">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required >
 
                     <label for="phoneNumber" class="css-form-label">Phone number</label>
                     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Number" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required >
+                    
+                    <label for="message" class="css-form-label">Message</label>
+                    <textarea name="message" placeholder="Enter message here" style="width: 400px; height: 150px;" required></textarea>
 
-                    <label for="textarea" class="css-form-label">Comment</label>
-                    <textarea placeholder="Enter message here" style="width: 400px; height: 150px;" required></textarea>
                     <input type="text" name="_honey" style="display: none;">
 
                     <span class="css-submit-button-container">
