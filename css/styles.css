@@ -6,6 +6,17 @@
     --warning-yellow: #ffc107;
 }
 
+@media only screen and (max-width: 1399px) {
+  .css-flex-container-map-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .css-message-column-container{
+    padding-top: 25px;
+  }
+}
+
 .navbar{
   background-color: var(--navy-blue) !important;
 }
@@ -52,15 +63,41 @@ input, textarea{
 }
 .css-flex-container-map-message{
   display: flex;
+  padding-top: 15px;
 }
 .css-map-column{
-  border: solid black 1px;
-  box-shadow: 10px 5px 5px rgb(118, 118, 118);
+  box-shadow: 1px 5px 5px rgb(118, 118, 118);
+  max-height: fit-content;
 }
 .css-message-column-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid red 1px;
   padding-left: 20px;
 }
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.footer-title{
+  font-size: 25px;
+  font-weight: bold;
+}
+.list-container{
+  list-style: none;
+}
+.list-link{
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+}
+.footer-list-title{
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+.footer-list-item{
+  padding-bottom: 5px;
+}
+

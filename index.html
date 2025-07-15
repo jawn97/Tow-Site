@@ -14,23 +14,23 @@
         <nav class="navbar navbar-expand-lg fixed-top">
 
             <div class="container-fluid">                                                           <!--container-fluid is a bootstrap class that stretches the container end-to-end on any screen size-->
-                <a class="navbar-brand" href="#">L.E.T.S</a>                                      <!--using container - which is also a bootstrap class - would be good for a fixed-width based on screen size, centered. it'd be good for a hero section since you can control the readability and orderlyness of the content within the hero-->
+                                                     <!--using container - which is also a bootstrap class - would be good for a fixed-width based on screen size, centered. it'd be good for a hero section since you can control the readability and orderlyness of the content within the hero-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>                                                                                    <!--the button and span are the 'hamburger' you see when screen shrinks-->
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">   <!--the id being here and matching the data-bs-target and aria-controls is crucial to being able to toggle the hamburger and it actually showing the list, remove the id and see what happens when you toggle the hamburger-->
                     <ul class="navbar-nav">                                                                 <!--navbar-nav puts the nav-items in horizontal formation and removes any list decorations like bullet points-->
-                        <li class="nav-item me-5">                                                     <!--ms-3 and me-3 each mean margin start and margin end, values range from 1-5 -->
+                        <li class="nav-item ms-5 me-5">                                                     <!--ms-3 and me-3 each mean margin start and margin end, values range from 1-5 -->
                             <a href="#" id="link-home" class="nav-link active" aria-current="page">Home</a> <!--nav-link keeps the links vertically aligned - remove the class to see what happens-->
                         </li>                                                                               <!--aria stands for accessible rich internet applications, use it for assitive tech like screen readers, in context the attribute and value represents the current page the user is on-->
-                        <li class="nav-item me-5">                                                               <!--its GOOD to use aria-current here because it shows attention to accessibility-->
+                        <li class="nav-item ms-5 me-5">                                                               <!--its GOOD to use aria-current here because it shows attention to accessibility-->
                             <a href="#" class="nav-link">Services</a>
                         </li>
-                        <li class="nav-item me-5">
+                        <li class="nav-item ms-5 me-5">
                             <a href="#" class="nav-link">About</a>
                         </li>
-                        <li class="nav-item me-5">
+                        <li class="nav-item ms-5 me-5">
                             <a href="#" class="nav-link">Contact</a>
                         </li>
                     </ul>
@@ -88,18 +88,29 @@
                     </div>
                     <div class="css-message-text-column-container">
                         <p>
-                            We are honored to be the area's top choice for clients in Lake Elsinore. We provide towing services for all types of vehicles, including large trucks, heavy trucks, and light trucks.
+                            We are honored to be the area's top choice for clients in Lake Elsinore. We provide towing services for all types of vehicles, including large trucks, heavy trucks, and light trucks.<br><br>
+                            We ensure that you arrive securely at your house or anywhere you need to go, and that your vehicle is towed to a location of your choice or to a mechanic for additional repairs.<br><br>
+                            If you need assistance right away, call our hotline and one of our professional tow truck drivers will be dispatched to your location. Our trademarks are quick reaction and quick towing. We arrive completely prepared and with all of the necessary instruments to begin assisting you straight immediately. We also employ GPS technology to keep track of where our drivers are at all times.
+                            <br><br>We can also help you with a range of other towing services, such as transporting vehicles from one state to another or from one car dealership to another. Our towing services are available to both private automobile owners and businesses for all of their needs, whether commercial or residential.
+                            <br><br>Call us for all your towing needs <a href="tel:1111111111" style="color: red;">(###) ###-####</a>
                         </p>
                     </div>
                 </div>
             </div>
-            <footer>
-                <div>
-                    Copyright
+            <footer class="footer">
+                <div class="footer-title">
+                    Lake Elsinore Towing Service
+                </div>
+                <div class="list-container">
+                    <li class="footer-list-title">Company</li>
+                    <li class="footer-list-item"><a href="#" class="list-link">Services</a></li>
+                    <li class="footer-list-item"><a href="#" class="list-link">About</a></li>
+                    <li class="footer-list-item"><a href="#" class="list-link">Contact</a></li>
                 </div>
             </footer>
         </div>
     </main>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
