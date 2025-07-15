@@ -44,6 +44,9 @@
   background-color: var(--white) !important;
   padding-top: 80px;
 }
+.css-astrisk{
+  color: var(--bright-red);
+}
 .css-submit-button{
   width: 80px;
   background-color: var(--bright-red);
