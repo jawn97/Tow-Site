@@ -30,7 +30,7 @@
 .nav-link{
   color: var(--white) !important;
 }
-.nav-link:hover{
+.nav-link:hover, .footer-link:hover{
   color: var(--warning-yellow) !important;
 }
 #link-active{
