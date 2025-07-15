@@ -33,7 +33,7 @@
 .nav-link:hover{
   color: var(--warning-yellow) !important;
 }
-#link-home{
+#link-active{
   color: var(--warning-yellow) !important;
 }
 .css-background-image{

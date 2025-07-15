@@ -21,10 +21,10 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">   <!--the id being here and matching the data-bs-target and aria-controls is crucial to being able to toggle the hamburger and it actually showing the list, remove the id and see what happens when you toggle the hamburger-->
                     <ul class="navbar-nav">                                                                 <!--navbar-nav puts the nav-items in horizontal formation and removes any list decorations like bullet points-->
                         <li class="nav-item ms-5 me-5">                                                     <!--ms-3 and me-3 each mean margin start and margin end, values range from 1-5 -->
-                            <a href="#" id="link-home" class="nav-link active" aria-current="page">Home</a> <!--nav-link keeps the links vertically aligned - remove the class to see what happens-->
+                            <a href="#" id="link-active" class="nav-link active" aria-current="page">Home</a> <!--nav-link keeps the links vertically aligned - remove the class to see what happens-->
                         </li>                                                                               <!--aria stands for accessible rich internet applications, use it for assitive tech like screen readers, in context the attribute and value represents the current page the user is on-->
                         <li class="nav-item ms-5 me-5">                                                               <!--its GOOD to use aria-current here because it shows attention to accessibility-->
-                            <a href="#" class="nav-link">Services</a>
+                            <a href="pages/services.html" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item ms-5 me-5">
                             <a href="#" class="nav-link">About</a>
@@ -44,7 +44,7 @@
         <div class="css-body-container container">                              <!--reference bootstrap documentation for container breakpoints-->
             <div class="css-phone-container d-flex justify-content-center">
                 <h1>
-                    Call Us: <a href="tel:9515307321" style="color: red;">(###) ###-####</a>
+                    <span style="color: red; font-weight: bold;">Call Us</span>: <a href="tel:9515307321" style="color: black;">(###) ###-####</a>
                 </h1>
             </div>
             <div class="css-tow-image p-4 d-flex justify-content-center">
@@ -52,7 +52,7 @@
             </div>
             <div class="css-form-container">
                 <form class="d-flex flex-column align-items-center" method="POST" action="https://formsubmit.co/8f8f0085cf62b5a562c24d3c8ae62537">
-                    <h1 class="mb-3">Get a <span style="color: red;">free estimate!</span></h1>
+                    <h1 class="mb-3">Get a <span style="color: red; font-weight: bold;">free estimate!</span></h1>
 
                     <label for="name" class="css-form-label"><span class="css-astrisk">*</span> Name</label>
                     <input type="text" id="name" name="name" placeholder="Full Name" class="mb-2 rounded-1" style="width: 400px; height: 40px;" required >
@@ -72,7 +72,7 @@
                 </form>
             </div>
             <div class="css-flex-container-map-message">
-                <div class="css-map-column">
+                <div class="css-map-column d-flex">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53129.22394034608!2d-117.33274945318777!3d33.66813374947951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1752273143432!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
