@@ -1,0 +1,2 @@
+Languages used: HTML5, CSS3
+Frameworks/ Libraries: Bootstrap
